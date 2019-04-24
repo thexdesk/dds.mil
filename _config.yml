@@ -16,8 +16,16 @@ twitter_url: https://twitter.com/DefenseDigital
 linkedin_url: https://www.linkedin.com/company/defensedigitalservice
 github_url: https://github.com/deptofdefense/
 
-theme: uswds-jekyll
+source: src
 
+# Assets settings
 sass:
-  sass_dir: assets/_sass
+  sass_dir: assets/stylesheets/
   style: compressed
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-redirect-from
