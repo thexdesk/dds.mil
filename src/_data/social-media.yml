@@ -1,0 +1,15 @@
+- name: Twitter
+  url: "{{ site.twitter_url }}"
+  sprite-ref: twitter
+
+- name: Medium
+  url: "{{ site.medium_url }}"
+  sprite-ref: medium-m
+
+- name: Linked in
+  url: "{{ site.linkedin_url }}"
+  sprite-ref: linkedin-in
+
+- name: GitHub
+  url: "{{ site.github_url }}"
+  sprite-ref: github
