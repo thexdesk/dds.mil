@@ -1,3 +1,4 @@
+/*
 $(function() {
   var $header = $('#fixed-header');
   var $main = $('main');
@@ -69,3 +70,4 @@ $(function() {
   );
 
 });
+*/
