@@ -2,7 +2,7 @@
 <html lang="en">
   {% include head.html %}
   <body>
-    {% include index_header.html %}
+    {% include header.html %}
     <div class="dds-site {{ page.url | replace:'index','home' | replace: '404','notfound' | replace:'.html','' | slugify }}-page">
       <main>
         {{ content }}
