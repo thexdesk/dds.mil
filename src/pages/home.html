@@ -1,0 +1,73 @@
+---
+layout: default
+permalink: /
+title: Defense Digital Service | Home
+---
+
+{% assign content = site.data.home %}
+
+<div class="site-c-page-banner site-c-page-banner--min-height">
+  <img src="{{ site.baseurl }}/assets/img/hero-placeholder.jpg" srcset="{{ site.baseurl }}/assets/img/hero-placeholder.jpg 640w,
+        {{ site.baseurl }}/assets/img/hero-placeholder.jpg" alt="">
+  <div class="site-c-page-banner__text">
+    <div class="grid-container">
+      <h1 class="site-c-page-banner__header">{{ content.hero.heading_title }}</h1>
+    </div>
+  </div>
+</div>
+<div class="grid-container margin-y-5">
+  <div class="grid-row">
+    <div class="grid-col-12 tablet:grid-col-7 desktop:grid-col-8 site-c-section-heading site-c-section-heading--keep-column tablet:padding-right-3">
+      <h2>Solving big problems, supporting critical missions.</h2>
+      <p>The Defense Digital Service (DDS) is an agency team of the <a href="https://www.usds.gov">U.S. Digital Service</a>. We hire top technologists on term-limited "tours of duty" to help build better services and solutions. Our mission is to drive a giant leap forward in the way the Department builds, buys and deploys technology and digital services.</p>
+
+      <h2>Our work</h2>
+      <p>The Department of Defense defends and protects our nation's military and civilians across the globe. However, complex systems and outdated tools can hinder this mission. We use design and technology to improve government services, strengthen national defense, and care for military members and their families. Explore some of our projects below.</p>
+
+      <div class="usa-grid">
+      {% for project in site.data.projects %}
+        <div class="project dds-default-item usa-width-one-third">
+          <img src="{{ project.img_url }}" alt="{{ project.img_description }}">
+          <h3>{{ project.title }}</h3>
+          <p>{{ project.project_description }}</p>
+        </div>
+      {% endfor %}
+      </div>
+
+      <h2>Our team</h2>
+      <p>The Defense Digital Service is a SWAT team of nerds working to improve technology across the Department of Defense. We hire world-class designers, engineers, product managers, and bureaucracy hackers from diverse backgrounds to work on high-impact projects at the Pentagon and across the globe. Team members develop code, manage technical projects or product releases, and rewire outdated IT approaches.</p>
+
+      <h2>Apply to USDS</h2>
+      <p>The best of technology. The best of government—and we need you.</p>
+      <p>The Defense Digital Service is an agency team of the U.S. Digital Service. Applicants should apply through USDS and note their interest in working for DDS.</p>
+      <a class="join-button" href="https://www.usds.gov/apply">Apply now</a>
+
+      <h2>Our partners</h2>
+      <p>We work alongside service members and civil servants across the Defense Department. DOD civilians and military members with technical expertise can apply to work with DDS on short-term details.</p>
+      <a class="join-button" href="https://hire.withgoogle.com/public/jobs/ddsmil/view/P_AAAAAAEAAF3KkxWUnRXoHq">TDY to DDS</a>
+
+      <section id="news" class="news">
+        <div class="usa-grid">
+          <div class="usa-width-two-thirds usa-offset-one-sixth">
+            <div class="section-rule"></div>
+            <h2>DDS in the News</h2>
+            <p>Follow us  <a href="{{ site.twitter_url }}">Twitter</a> or <a href="{{ site.medium_url }}">Medium</a> to read more about our latest adventures.</p><p>&nbsp;</p>
+          </div>
+        </div>
+
+        <div class="press">
+          <div class="usa-grid">
+            {% for story in site.data.press %}
+            <div class="story dds-default-item usa-width-one-third">
+              <a href="{{ story.press_url }}">
+                {{ story.title }}<br>
+                <span class="author">{{ story.author }}</span>
+              </a>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>

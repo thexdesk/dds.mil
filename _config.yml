@@ -20,6 +20,9 @@ twitter_url: https://twitter.com/DefenseDigital
 linkedin_url: https://www.linkedin.com/company/defensedigitalservice
 github_url: https://github.com/deptofdefense/
 
+# Data settings
+data_dir : _content
+
 # Assets settings
 sass:
   sass_dir: assets/stylesheets/
