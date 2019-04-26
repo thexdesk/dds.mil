@@ -3,7 +3,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+  <title>{% if page.title %}{{ page.title | escape }} | {{ site.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
   <meta name="description" content="{{ page_description }}" />
   <link rel="canonical" href="{{ url_path }}" />
   <meta property="og:title" content="{{ page_title }}" />
@@ -28,6 +28,4 @@
   <meta name="theme-color" content="#ffffff">
 
   <link rel="stylesheet" media="all" href="{{ site.baseurl }}/assets/stylesheets/application.css"></link>
-
-  {% include analytics.html %}
 </head>
