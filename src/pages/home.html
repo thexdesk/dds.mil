@@ -35,12 +35,6 @@ title: Defense Digital Service | Home
       {% endfor %}
       </div>
 
-
-      <h2>Apply to USDS</h2>
-      <p>The best of technology. The best of government—and we need you.</p>
-      <p>The Defense Digital Service is an agency team of the U.S. Digital Service. Applicants should apply through USDS and note their interest in working for DDS.</p>
-      <a class="join-button" href="https://www.usds.gov/apply">Apply now</a>
-
       <h2>Our partners</h2>
       <p>We work alongside service members and civil servants across the Defense Department. DOD civilians and military members with technical expertise can apply to work with DDS on short-term details.</p>
       <a class="join-button" href="https://hire.withgoogle.com/public/jobs/ddsmil/view/P_AAAAAAEAAF3KkxWUnRXoHq">TDY to DDS</a>
@@ -54,18 +48,7 @@ title: Defense Digital Service | Home
           </div>
         </div>
 
-        <div class="press">
-          <div class="usa-grid">
-            {% for story in site.data.press %}
-            <div class="story dds-default-item usa-width-one-third">
-              <a href="{{ story.press_url }}">
-                {{ story.title }}<br>
-                <span class="author">{{ story.author }}</span>
-              </a>
-            </div>
-            {% endfor %}
-          </div>
-        </div>
+        {% include news-articles.html %}
       </section>
     </div>
   </div>

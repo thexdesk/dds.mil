@@ -14,7 +14,9 @@ domain: "https://dds.mil"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://dds.mil"
 
-# Social media
+
+# URLs & Social media
+usds_url: https://usds.gov
 medium_url: https://medium.com/@DefenseDigitalService
 twitter_url: https://twitter.com/DefenseDigital
 linkedin_url: https://www.linkedin.com/company/defensedigitalservice
