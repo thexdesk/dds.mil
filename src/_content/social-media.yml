@@ -1,19 +1,15 @@
-- name: Instagram
-  url: "https://www.instagram.com/usdigitalservice"
-  sprite-ref: instagram
-
 - name: Twitter
-  url: "https://twitter.com/USDS"
+  url: "https://twitter.com/DefenseDigital"
   sprite-ref: twitter
 
-- name: Facebook
-  url: "https://www.facebook.com/unitedstatesdigitalservice"
-  sprite-ref: facebook-f
-
 - name: Medium
-  url: "https://medium.com/@USDigitalService"
+  url: "https://medium.com/@DefenseDigitalService"
   sprite-ref: medium-m
 
 - name: Linked in
-  url: "https://www.linkedin.com/company/united-states-digital-service"
+  url: "https://www.linkedin.com/company/defensedigitalservice"
   sprite-ref: linkedin-in
+
+- name: GitHub
+  url: "https://github.com/deptofdefense/"
+  sprite-ref: github
