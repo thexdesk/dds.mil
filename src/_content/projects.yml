@@ -13,7 +13,7 @@
 
 - name: Code.mil
   title: Code.mil foo foo foo
-  img_url: assets/img/projects/code.png
+  img_url: code.png
   img_description: The Code.gov logo; the word “Code” monospaced with an underscore after, reminescent of a terminal prompt
   img_credit: USGW
   summary: |
@@ -21,7 +21,7 @@
 
 - name: Move.mil
   title: This is an interesting project
-  img_url: assets/img/projects/move.png
+  img_url: move.png
   img_description: The USTRANSCOM logo; a light blue sphere with white gridlines, a gold winged sea horse, all within a white designation band edged light blue, displaying four gold stars, two on either side of the inscription “UNITED STATES” at top and “TRANSPORTATION COMMAND” below, all black. All surmounting a light blue compass rose.
   img_credit: USGW
   summary: |
@@ -29,7 +29,7 @@
 
 - name: ANET
   title: ANET headline here
-  img_url: assets/img/projects/rs.png
+  img_url: rs.png
   img_description: Logo for NATO Resolute Support
   img_credit: U.S. Central Command
   summary: |
@@ -37,7 +37,7 @@
 
 - name: MIRS Form Transfer
   title: Headline headline yea
-  img_url: assets/img/projects/mirs.png
+  img_url: mirs.png
   img_description: Logo for USMEPCOM - the US Military Entrance Processing Command
   img_credit: USGW
   summary: |
@@ -45,7 +45,7 @@
 
 - name: Army Cyber Partnership
   title: Army Cyber Partnership headline to tell me about it
-  img_url: assets/img/layout/army-digital-service.png
+  img_url: army-digital-service.png
   img_description: The Army Digital Service logo; a sphere with a yellow outline, a gold winged image on a black background, “DEPARTMENT OF DEFENSE” at top and “ARMY DIGITAL SERVICE” below, all white.
   img_credit: USGW
   summary: |
