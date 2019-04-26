@@ -23,8 +23,10 @@ people:
   heading_button_text: "Meet more staff"
 
 news:
-  heading_title: "USDS in the news"
+  heading_title: "DDS in the news"
   heading_button_text: "See more news"
+  description: |-
+    Follow us  <a href="{{ site.twitter_url }}">Twitter</a> or <a href="{{ site.medium_url }}">Medium</a> to read more about our latest adventures.
 
 community:
   heading_title: "We are a community"

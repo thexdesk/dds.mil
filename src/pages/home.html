@@ -38,18 +38,27 @@ title: Defense Digital Service | Home
       <h2>Our partners</h2>
       <p>We work alongside service members and civil servants across the Defense Department. DOD civilians and military members with technical expertise can apply to work with DDS on short-term details.</p>
       <a class="join-button" href="https://hire.withgoogle.com/public/jobs/ddsmil/view/P_AAAAAAEAAF3KkxWUnRXoHq">TDY to DDS</a>
-
-      <section id="news" class="news">
-        <div class="usa-grid">
-          <div class="usa-width-two-thirds usa-offset-one-sixth">
-            <div class="section-rule"></div>
-            <h2>DDS in the News</h2>
-            <p>Follow us  <a href="{{ site.twitter_url }}">Twitter</a> or <a href="{{ site.medium_url }}">Medium</a> to read more about our latest adventures.</p><p>&nbsp;</p>
-          </div>
-        </div>
-
-        {% include news-articles.html %}
-      </section>
     </div>
+
   </div>
+
+  <section class="site-c-section">
+    <div class="site-c-section-heading">
+      <h2 class="site-c-section-heading__heading">{{ content.news.heading_title }}</h2>
+      <div class="site-c-section-heading__links card:display-none tablet:display-block">
+        <a class="usa-button usa-button--outline" href="{{ site.baseurl }}" class="usa-button usa-button--outline">{{ content.news.heading_button_text }}</a>
+      </div>
+      <p>{{ content.news.description }}</p>
+    </div>
+
+    <div class="site-c-section__body">
+
+      {% include news-articles.html %}
+
+      <p class="tablet:display-none">
+        <a class="usa-button usa-button--outline" href="{{ site.baseurl }}" class="usa-button usa-button--outline">{{ content.news.heading_button_text }}</a>
+      </p>
+    </div>
+  </section>
+
 </div>
