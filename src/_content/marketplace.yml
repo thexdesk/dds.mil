@@ -1,11 +1,4 @@
-foo:
-  heading_title: "Transforming technology within the Department of Defense"
-  heading_button_text: "Apply now"
-
-foo:
-  heading_title: "We’re solving big problems"
-  heading_text: |-
-      Millions of people use Federal Government services every day. Veterans apply for health care. Immigrants apply for naturalization. Too often, outdated tools and complex systems make these interactions cumbersome and frustrating.
-
-      To improve these services, USDS hires top technologists into term-limited ‘tours of civic service.’ By working alongside civil servants, they help build better tools for the people.
-  heading_button_text: "Learn about our mission"
+title:
+  heading_title: "Defense Digital Service Marketplace"
+  heading_description: |-
+    <strong>Welcome to the Defense Digital Service Digital Marketplace.</strong> This marketplace is a platform for Commercial Solutions Openings (CSO) using Other Transaction Authority (OTA), a non-FAR based acquisition authority provided under USC 2371(b). Below, you will find current digital service solicitations:

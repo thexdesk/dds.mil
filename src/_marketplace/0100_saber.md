@@ -1,14 +1,14 @@
 ---
 # Page template info (DO NOT EDIT)
 layout: default
-banner_file: ""
-banner_file_mobile: ""
+banner_file: banner--people-projects-lg.svg
+banner_file_mobile: banner--people-projects-sm.svg
 marketplace_page: true
 
 # Carousel (Edit this)
-carousel_title: "SABER"
-carousel_summary: "summary text"
-carousel_image_name: ""
+# carousel_title: "SABER"
+# carousel_summary: "summary text"
+# carousel_image_name: ""
 
 # Project detail page (Edit this)
 title: "Saber"

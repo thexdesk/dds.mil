@@ -44,12 +44,8 @@
 
   <main id="main-content" role="main" class="margin-bottom-9">
 
-    {% if page.project_page %}
-      {% include _template--project-page.html %}
-    {% elsif page.people_page %}
-      {% include _template--people-page.html %}
-    {% elsif page.collection == 'reports_to_congress' %}
-      {% include _template--report-to-congress.html %}
+    {% if page.marketplace_page %}
+      {% include _template--marketplace-page.html %}
     {% else %}
       {{ content }}
     {% endif %}
