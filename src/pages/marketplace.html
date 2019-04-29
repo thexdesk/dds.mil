@@ -12,28 +12,19 @@ permalink: /marketplace
       <h1>{{ content.title.heading_title }}</h1>
       <p>{{ content.title.heading_description }}</p>
 
-      <ul>
-        <li><a href="/marketplace/saber">Background Investigation Systems</a></li>
-        <li><a href="/marketplace/atat">[CLOSED] Cloud Provisioning Tool</a></li>
-      </ul>
+      {% for project in site.marketplace %}
+        <ul>
+          <li>
+            <small>{{ project.status }}</small>
+            <a class="" href="{{ site.baseurl }}/{{ project.permalink }}">{{ project.title }}</a>
+          </li>
+        </ul>
+      {% endfor %}
 
     </div>
   </div>
 </div>
 <div class="grid-container">
-  <section class="site-c-section">
-    <div class="site-c-section-heading">
-      <h1 class="site-c-section-heading__heading site-c-section-heading__heading--h1">Our Projects</h1>
-    </div>
-  </section>
-YOOOO
-  {% for project in site.marketplace %}
-    <ul>
-      <li>{{ project.title }}</li>
-    </ul>
-  {% endfor %}
-
-  <hr>
 
   <section class="site-c-section">
     <div class="site-c-section__body">

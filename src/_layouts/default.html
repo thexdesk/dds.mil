@@ -14,23 +14,16 @@
 
   {% if page.banner_file %}
   <div class="site-c-page-banner">
-    {% if page.project_page or page.people_page %}
+    {% if page.marketplace %}
     <div class="site-c-page-banner__text site-c-page-banner__text--alt padding-0">
       <div class="grid-container height-full display-flex flex-align-center">
         <p class="site-c-page-banner__header--alt">
-          {% if page.project_page %}
+          {% if page.marketplace_page %}
             <a class="site-c-page-banner__header-link display-flex flex-align-center" href="{{ site.baseurl }}/projects">
               <svg aria-hidden="true" class="width-3 height-4 margin-right-2">
                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl }}/assets/img/fontawesome-sprite.svg#angle-left"></use>
               </svg>
-              Projects
-            </a>
-          {% else %}
-            <a class="site-c-page-banner__header-link display-flex flex-align-center" href="{{ site.baseurl }}/people">
-              <svg aria-hidden="true" class="width-3 height-4 margin-right-2">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl }}/assets/img/fontawesome-sprite.svg#angle-left"></use>
-              </svg>
-              People
+              Marketplace
             </a>
           {% endif %}
         </p>

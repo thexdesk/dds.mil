@@ -11,10 +11,11 @@ marketplace_page: true
 # carousel_image_name: ""
 
 # Project detail page (Edit this)
-title: "Saber"
+title: Saber
 agency: agency
 permalink: marketplace/saber
 project_url: https://www.foo.foo
+status: open
 ---
 
 <h1>Request for White Papers:<br />Background Investigation System</h1>
