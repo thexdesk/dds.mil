@@ -1,20 +1,21 @@
 ---
 layout: default
-title: Defense Digital Service | News/Press
+title: News &amp; press
 permalink: /news-press
 ---
 
-{% assign content = site.data.our_mission %}
+{% assign content = site.data.news_and_press %}
 
 <div class="grid-container margin-y-5">
   <div class="grid-row">
     <div class="grid-col-12 tablet:grid-col-7 desktop:grid-col-8 site-c-section-heading site-c-section-heading--keep-column tablet:padding-right-3">
-      <h1>NEWS/PRESS</h1>
+      <h1>{{ content.page_title.heading_title }}</h1>
+      <p>{{ content.page_title.heading_text }}</p>
 
-      <h2>DDS in the news</h2>
+      <h2>{{ content.press_clips.heading_title }}</h2>
       {% include news-articles.html %}
 
-      <h2>DDS Medium posts</h2>
+      <h2>{{ content.medium.heading_title }}</h2>
       <ul>
         {% for article in site.data.medium_posts %}
           <li>
@@ -23,7 +24,7 @@ permalink: /news-press
         {% endfor %}
       </ul>
 
-      <h2>Press releases</h2>
+      <h2>{{ content.press_releases.heading_title }}</h2>
       <ul>
         {% for project in site.press_releases %}
           <li>
@@ -31,6 +32,9 @@ permalink: /news-press
           </li>
         {% endfor %}
       </ul>
+
+      <h2>{{ content.for_the_press.heading_title }}</h2>
+      <p>{{ content.for_the_press.heading_text }}</p>
 
 
     </div>
