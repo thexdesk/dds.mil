@@ -21,8 +21,6 @@ objectives:
   link_text: "Find out how we meet our goals"
 
 
-
-
 who_we_help:
   heading_title: "Who we help"
   who_we_help_text: |-
@@ -43,40 +41,6 @@ who_we_help:
     - image: graphic-mission-small-business-owner.svg
       title: Small Business Owners
 
-
-
-
-our_values:
-  heading_title: "Our values"
-  value_1_title: "Hire and empower great people."
-  value_1_image: graphic-mission-hire-empower.svg
-  value_1_text: |-
-    Humans push our mission forward. Empathy and tenacity are just as important as being a great technologist.
-
-  value_2_title: "Find the truth. Tell the truth."
-  value_2_image: graphic-mission-find-truth.svg
-  value_2_text: |-
-    We expect everyone to be humble, but question what’s presented to them, and have the confidence to find a new path forward.
-
-  value_3_title: "Optimize for results, not optics."
-  value_3_image: graphic-mission-optimize-results.svg
-  value_3_text: |-
-    We work for the people — not attention, status, or headlines. Our projects may be hard, but we know they’re worth doing.
-
-  value_4_title: "Go where the work is."
-  value_4_image: graphic-mission-go-where-work-is.svg
-  value_4_text: |-
-    Meeting with civil servants on their turf, we can partner to create lasting change. Modernizing government is up to all of us, together.
-
-  value_5_title: "Create momentum."
-  value_5_image: graphic-mission-create-momentum.svg
-  value_5_text: |-
-    People urgently need better digital services from their government. By building velocity, we can deliver more value, faster.
-
-  value_6_title: "Design with users, not for them."
-  value_6_image: graphic-mission-design-with-users.svg
-  value_6_text: |-
-    The best products aren’t created in a vacuum. Using empathy and curiosity, we can effectively address our users’ needs.
 
 origin_story:
   heading_title: "The USDS origin story"

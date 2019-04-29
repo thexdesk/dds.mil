@@ -21,6 +21,8 @@ data_dir : _content
 collections:
   marketplace:
     output: true
+  press_releases:
+    output: true
 
 # Assets settings
 sass:

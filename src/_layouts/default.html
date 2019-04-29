@@ -39,6 +39,8 @@
 
     {% if page.marketplace_page %}
       {% include _template--marketplace-page.html %}
+    {% elsif page.press_release_page %}
+      {% include _template--press-release-page.html %}
     {% else %}
       {{ content }}
     {% endif %}

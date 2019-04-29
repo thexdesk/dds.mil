@@ -1,7 +1,10 @@
 ---
-layout: index
-title: Defense Digital Service | Press | New DDS Director to Expand High-Impact Technology Initiatives
-permalink: /new-dds-director-announced/
+layout: default
+press_release_page: true
+
+title: New DDS Director to Expand High-Impact Technology Initiatives
+permalink: /news-press/new-dds-director-announced
+
 ---
 <div id="press" class="dds-opportunities">
   <div class="usa-grid">
