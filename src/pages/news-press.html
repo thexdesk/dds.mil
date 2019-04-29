@@ -11,6 +11,10 @@ permalink: /news-press
     <div class="grid-col-12 tablet:grid-col-7 desktop:grid-col-8 site-c-section-heading site-c-section-heading--keep-column tablet:padding-right-3">
       <h1>NEWS/PRESS</h1>
 
+      <h2>DDS in the news</h2>
+      {% include news-articles.html %}
+
+      <h2>Press releases</h2>
       {% for project in site.press_releases %}
         <ul>
           <li>
