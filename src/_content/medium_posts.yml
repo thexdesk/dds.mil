@@ -3,52 +3,38 @@
 # - Articles will appear in reverse chronological order, meaning
 #   that the first article will be the first item in the carousel
 
-- title: "The importance of Product Management in government"
-  image_name: blog-product-management.jpg
-  url: "https://medium.com/the-u-s-digital-service/the-importance-of-product-management-in-government-b59933d01874"
-  summary: "We can improve both user experience and cost efficiencies of digital product development in government by designating product managers to lead digital product development and evolving our national model of service."
-
-- title: "A day in the life - Jenn Noinaj, UX strategist and designer"
-  image_name: blog-jenn-day-in-the-life.jpg
-  url: "https://medium.com/the-u-s-digital-service/day-in-the-life-jenn-noinaj-ux-strategist-and-designer-7e093115ba72"
-  summary: "Currently I’m supporting the team at the Federal Emergency Management Agency (FEMA) working to improve the process to apply for and manage federal assistance."
-
-- title: "Hack the Marine Corps results are in!"
+- title: "Iterating on Code.mil"
   image_name: blog-hack-the-marines.jpg
-  url: "https://medium.com/the-u-s-digital-service/hack-the-marine-corps-results-are-in-5c9e45be0b26"
-  summary: "Ethical hackers work alongside Marines to discover and disclose nearly 150 vulnerabilities within the U.S. Marine Corps public-facing websites and services."
+  url: "https://medium.com/defense-digital-service/iterating-on-code-mil-1b5f70cb6c0b"
+  summary: "No one ever said open sourcing code at the Department of Defense (DoD) would be easy. In February 2017, the Defense Digital Service (DDS) decided it was time to take a more involved approach within the Department of Defense in the government-wide movement to open source code."
 
-- title: "A quick guide to inclusive design"
+- title: "Code.mil: An Open Source Initiative at the Pentagon"
   image_name: blog-inclusive-design.jpg
-  url: "https://medium.com/the-u-s-digital-service/a-quick-guide-to-inclusive-design-16ba41eece89"
-  summary: "We believe inclusive design is just good design, and so a priority for our design team is to ensure we are deliberate in our research, design, and content practices."
+  url: "https://medium.com/@DefenseDigitalService/code-mil-an-open-source-initiative-at-the-pentagon-5ae4986b79bc"
+  summary: "Building bridges between the Department of Defense and the software development community, one pull request at a time."
 
-- title: "Saving VA $100 million dollars"
+- title: "Data.mil: An Experiment in Defense Open Data"
   image_name: blog-saving-va.jpg
-  url: "https://medium.com/the-u-s-digital-service/saving-va-100-million-dollars-c5d992e0cf54"
-  summary: "Our team helped Veterans Affairs become one of the earliest federal government adopters of modern, cloud-based IT infrastructure."
+  url: "https://medium.com/defense-digital-service/data-mil-an-experiment-in-defense-open-data-259f58bcaafb"
+  summary: "Major Aaron Capizzi and Mary Lazzeri on open data in the Department of Defense, experimentation, and inviting public collaboration."
 
-- title: "Staying with the U.S. Digital Service"
+- title: "Shifting the Tide: DoD's new Vulnerability Disclosure Policy"
   image_name: blog-staying-with-usds.jpg
-  url: "https://medium.com/the-u-s-digital-service/staying-with-the-u-s-digital-service-d465685c921f"
-  summary: "Matt Cutts originally signed on for a three month tour of duty with USDS. Read why he stayed."
+  url: "https://medium.com/defense-digital-service/shifting-the-tide-dods-new-vulnerability-disclosure-policy-715ece33fbb7"
+  summary: |-
+    How "Hack the Pentagon" follow-up efforts are strengthening and changing the DoD’s security landscape.
 
-- title: "How a 20-year old kernel feature helped USDS improve VA's network"
+- title: "Meet the Team: Brandon • Lori • Nick"
   image_name: blog-20-year-kernel.jpg
-  url: "https://medium.com/the-u-s-digital-service/how-a-20-year-old-kernel-feature-helped-usds-improve-vas-network-33109cbcb2e6"
-  summary: "Our team is developing a React on Rails application, Caseflow, that will enable a better, more efficient process for managing Veterans' appeals by increasing productivity, preventing errors, and automating or eliminating manual steps."
+  url: "https://medium.com/defense-digital-service/meet-the-team-brandon-lori-nick-b9551b9c562f"
+  summary: "Get to know some of the amazing faces that work at the Defense Digital Service."
 
-- title: "A personal story about modernizing Medicare"
-  image_name: blog-personal-story.jpg
-  url: "https://medium.com/the-u-s-digital-service/a-personal-story-about-modernizing-medicare-9f1e164fa3b2"
-  summary: "Within her first few months at USDS, product manager Ju-Lie McReynolds, impacts Medicare coverage of continuous glucose monitors."
-
-- title: "Scary challenges at the U.S. Digital Service"
+- title: "Why did Matt Cutts leave Google for USDS?"
   image_name: blog-scary-challenges.jpg
-  url: "https://medium.com/the-u-s-digital-service/scary-challenges-at-the-u-s-digital-service-e5a809d0f87d"
-  summary: "Meet members of our team and read about scary challenges they have overcome."
+  url: "https://medium.com/defense-digital-service/why-did-matt-cutts-leave-google-for-usds-d9a0408ef627"
+  summary: "Matt Cutts recently left his 15-year stint at Google as head of the webspam team to join the Defense Digital Service, a USDS agency team at the Pentagon."
 
-- title: "Blue Button API"
+- title: "Hacking the Pentagon"
   image_name: blog-blue-button.jpg
-  url: "https://medium.com/the-u-s-digital-service/blue-button-api-c1b47ff8c464"
-  summary: "Last year the Center for Medicare and Medicaid Services (CMS) tapped USDS to work alongside CMS in building an API that empowers Medicare beneficiaries to grant third-party developers access to their claims data."
+  url: "https://medium.com/the-u-s-digital-service/hacking-the-pentagon-69486aa9f226"
+  summary: "Though I haven’t done any complex buffer overflows, and I only got through the basics of Haskell, I’m a “hacker” in my own right — hacking Government bureaucracies around our outdated and often restrictive policies so we can get shit done at a pace consistent with the tech sector."

@@ -14,14 +14,24 @@ permalink: /news-press
       <h2>DDS in the news</h2>
       {% include news-articles.html %}
 
+      <h2>DDS Medium posts</h2>
+      <ul>
+        {% for article in site.data.medium_posts %}
+          <li>
+            <a class="" href="{{ article.url }}">{{ article.title }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+
       <h2>Press releases</h2>
-      {% for project in site.press_releases %}
-        <ul>
+      <ul>
+        {% for project in site.press_releases %}
           <li>
             <a class="" href="{{ site.baseurl }}/{{ project.permalink }}">{{ project.title }}</a>
           </li>
-        </ul>
-      {% endfor %}
+        {% endfor %}
+      </ul>
+
 
     </div>
   </div>
