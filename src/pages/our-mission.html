@@ -9,13 +9,23 @@ permalink: /our-mission
 <div class="grid-container margin-y-5">
   <div class="grid-row">
     <div class="grid-col-12 tablet:grid-col-7 desktop:grid-col-8 site-c-section-heading site-c-section-heading--keep-column tablet:padding-right-3">
-      <h1>MISSION</h1>
-      <h2>Solving big problems, supporting critical missions.</h2>
-      <p>The Defense Digital Service (DDS) is an agency team of the <a href="https://www.usds.gov">U.S. Digital Service</a>. We hire top technologists on term-limited "tours of duty" to help build better services and solutions. Our mission is to drive a giant leap forward in the way the Department builds, buys and deploys technology and digital services.</p>
+      <h1>{{ content.page_title.heading_title }}</h1>
+      <h2>{{ content.page_title.heading_text }}</h2>
 
-      <h2>Our work</h2>
-      <p>The Department of Defense defends and protects our nation's military and civilians across the globe. However, complex systems and outdated tools can hinder this mission. We use design and technology to improve government services, strengthen national defense, and care for military members and their families.</p>
-      <p>The Defense Digital Service is a SWAT team of nerds working to improve technology across the Department of Defense. We hire world-class designers, engineers, product managers, and bureaucracy hackers from diverse backgrounds to work on high-impact projects at the Pentagon and across the globe. Team members develop code, manage technical projects or product releases, and rewire outdated IT approaches.</p>
+      <h2><p>{{ content.our_work.title }}</p></h2>
+      <p>{{ content.our_work.section_1_text }}</p>
+      <p>{{ content.our_work.section_2_text }}</p>
+      <p>{{ content.our_work.section_3_text }}</p>
+
+      <h2><p>{{ content.what_we_do.title }}</p></h2>
+      <p>{{ content.what_we_do.section_1_text }}</p>
+
+      <h2><p>{{ content.objectives.title }}</p></h2>
+      <ul>
+        {% for objective in content.objectives.items %}
+          <li>{{ objective.item }}</li>
+        {% endfor %}
+      </ul>
 
     </div>
   </div>
