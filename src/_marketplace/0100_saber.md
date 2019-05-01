@@ -5,17 +5,18 @@ banner_file: banner--people-projects-lg.svg
 banner_file_mobile: banner--people-projects-sm.svg
 marketplace_page: true
 
-# Carousel (Edit this)
-# carousel_title: "SABER"
-# carousel_summary: "summary text"
-# carousel_image_name: ""
-
 # Project detail page (Edit this)
 title: Saber
 agency: agency
 permalink: marketplace/saber
 project_url: https://www.foo.foo
+hide: false
 status: open
+date_open: "4/1/2019"
+date_close: "4/2/2019"
+summary: |-
+  The Department of Defense is requesting short white papers (not to exceed 10 pages) outlining commercial development services corresponding to the Statement of Objectives document included below. Interested vendors may use the White Paper Template to submit a response.
+
 ---
 
 <h1>Request for White Papers:<br />Background Investigation System</h1>
@@ -23,7 +24,7 @@ status: open
 
 <h2>Responding to a Requirement</h2>
 <p>
-    The Department of Defense is requesting short white papers (not to exceed 10 pages) outlining commercial development services corresponding to the Statement of Objectives document included below. Interested vendors may use the White Paper Template to submit a response.
+    {{ page.summary }}
 </p>
 <p>
     <a href="/assets/data/marketplace/saber/saber_statement_of_objectives.pdf" target="_blank">Statement of Objectives</a> (PDF) [updated 2019/03/25 with a corrected citation in &sect; 5.0]<br />

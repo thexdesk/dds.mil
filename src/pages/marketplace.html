@@ -7,49 +7,26 @@ permalink: /marketplace
 {% assign content = site.data.marketplace %}
 
 {% include _page-heading.html %}
-<div class="grid-container margin-y-5">
-  <div class="grid-row">
-    <div class="grid-col-12 tablet:grid-col-7 desktop:grid-col-8 site-c-section-heading site-c-section-heading--keep-column tablet:padding-right-3">
-      <h1>{{ content.title.heading_title }}</h1>
-      <p>{{ content.title.heading_description }}</p>
 
+<section class="site-c-section">
+  <div class="site-c-section__body">
+    <div class="site-c-cards margin-x-neg-2 grid-row">
       {% for project in site.marketplace %}
-        <ul>
-          <li>
-            <small>{{ project.status }}</small>
-            <a class="" href="{{ site.baseurl }}/{{ project.permalink }}">{{ project.title }}</a>
-          </li>
-        </ul>
-      {% endfor %}
-
-    </div>
-  </div>
-</div>
-<div class="grid-container">
-
-  <section class="site-c-section">
-    <div class="site-c-section__body">
-      <div class="site-c-cards margin-x-neg-2 grid-row">
-        {% for project in site.marketplace %}
-          {% unless project.hide %}
-          {% if project.carousel_title %}
-            <div class="tablet:grid-col-6 desktop:grid-col-4 padding-x-2 margin-bottom-4">
-              <a class="site-c-card site-c-card--linked" href="{{ site.baseurl }}/{{ project.permalink }}">
-                <img class="site-c-card__image" src="{{ site.baseurl }}/images/{{ project.carousel_image_name }}" alt="Project photo" />
-                <div class="site-c-card__body">
-                  <span class="site-c-flag">{{ project.agency }}</span>
-                <span class="site-c-card__title">{{ project.carousel_title }}</span>
+        {% unless project.hide %}
+          <div class="tablet:grid-col-6 desktop:grid-col-4 padding-x-2 margin-bottom-4">
+            <a class="site-c-card site-c-card--linked" href="{{ site.baseurl }}/{{ project.permalink }}">
+              <div class="site-c-card__body">
+                <span class="display-inline usa-tag text-white {% if project.status == "open" %}bg-mint{% else %}bg-red{% endif %}">{{ project.status }}</span><span class="display-inline site-c-flag">{{ project.agency }}</span>
+                <span class="site-c-card__title">{{ project.title }}</span>
                 <div class="usa-prose margin-top-2">
-                  <p>{{ project.carousel_summary }}</p>
+                  <p>{{ project.summary }}</p>
                   <p class="site-c-card__affordance" aria-hidden="true">Learn more</p>
                 </div>
-                </div>
-              </a>
-            </div>
-          {% endif %}
-          {% endunless %}
-        {% endfor %}
-      </div>
+              </div>
+            </a>
+          </div>
+        {% endunless %}
+      {% endfor %}
     </div>
-  </section>
-</div>
+  </div>
+</section>
