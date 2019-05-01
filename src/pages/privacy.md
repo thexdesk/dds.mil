@@ -1,7 +1,10 @@
 ---
 layout: default
+title: Privacy
 permalink: /privacy
 ---
+
+{% include _page-heading.html %}
 
 <h1>Defense Digital Service Privacy Policy</h1>
 <p>Updated: August 18, 2016</p>

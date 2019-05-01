@@ -6,12 +6,5 @@ permalink: /projects
 
 {% assign content = site.data.projects %}
 
-<div class="grid-container margin-y-5">
-  <div class="grid-row">
-    <div class="grid-col-12 tablet:grid-col-7 desktop:grid-col-8 site-c-section-heading site-c-section-heading--keep-column tablet:padding-right-3">
-      <h1>Projects</h1>
-
-    </div>
-  </div>
-  {% include projects-grid.html %}
-</div>
+{% include _page-heading.html %}
+{% include projects-grid.html %}

@@ -13,38 +13,26 @@
   {% include _header.html %}
 
   {% if page.banner_file %}
-  <div class="site-c-page-banner">
-    {% if page.marketplace %}
-    <div class="site-c-page-banner__text site-c-page-banner__text--alt padding-0">
-      <div class="grid-container height-full display-flex flex-align-center">
-        <p class="site-c-page-banner__header--alt">
-          {% if page.marketplace_page %}
-            <a class="site-c-page-banner__header-link display-flex flex-align-center" href="{{ site.baseurl }}/projects">
-              <svg aria-hidden="true" class="width-3 height-4 margin-right-2">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl }}/assets/img/fontawesome-sprite.svg#angle-left"></use>
-              </svg>
-              Marketplace
-            </a>
-          {% endif %}
-        </p>
-      </div>
+    <div class="site-c-page-banner">
+      <img src="{{ site.baseurl }}/assets/img/{{ page.banner_file }}" srcset="{{ site.baseurl }}/assets/img/{{ page.banner_file_mobile }} 640w,
+            {{ site.baseurl }}/assets/img/{{ page.banner_file }}" alt="">
     </div>
-    {% endif %}
-    <img src="{{ site.baseurl }}/assets/img/{{ page.banner_file }}" srcset="{{ site.baseurl }}/assets/img/{{ page.banner_file_mobile }} 640w,
-          {{ site.baseurl }}/assets/img/{{ page.banner_file }}" alt="">
-  </div>
   {% endif %}
 
   <main id="main-content" role="main" class="margin-bottom-9">
-
-    {% if page.marketplace_page %}
-      {% include _template--marketplace-page.html %}
-    {% elsif page.press_release_page %}
-      {% include _template--press-release-page.html %}
-    {% else %}
+    {% if page.title == "Home" %}
       {{ content }}
+    {% else %}
+    <div class="grid-container margin-y-5">
+      {% if page.marketplace_page %}
+        {% include _template--marketplace-page.html %}
+      {% elsif page.press_release_page %}
+        {% include _template--press-release-page.html %}
+      {% else %}
+        {{ content }}
+      {% endif %}
+    </div>
     {% endif %}
-
   </main>
 
   {% include _footer.html %}
