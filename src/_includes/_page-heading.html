@@ -1,5 +1,13 @@
 <div class="grid-row">
   <div class="grid-col-12 tablet:grid-col-7 desktop:grid-col-8 site-c-section-heading site-c-section-heading--keep-column tablet:padding-right-3">
-    <h1 class="site-c-section-heading__heading site-c-section-heading__heading--h1">{{ page.title }}</h1>
+    {% if content.page_title %}
+      <h1 class="site-c-section-heading__heading site-c-section-heading__heading--h1">{{ content.page_title.heading_title }}</h1>
+      <p>{{ content.page_title.heading_text }}</p>
+      {% if content.page_title.heading_button_text %}
+        <a class="join-button" href="https://hire.withgoogle.com/public/jobs/ddsmil/view/P_AAAAAAEAAF3KkxWUnRXoHq">{{ content.page_title.heading_button_text }}</a>
+      {% endif %}
+    {% else %}
+      <h1 class="site-c-section-heading__heading site-c-section-heading__heading--h1">{{ page.title }}</h1>
+    {% endif %}
   </div>
 </div>
