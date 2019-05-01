@@ -1,10 +1,18 @@
-<ul class="grid-row tablet:margin-x-neg-2 site-c-articles margin-top-neg-3">
+<div class="site-c-cards margin-x-neg-2 grid-row">
   {% for project in site.data.projects %}
-  <li class="grid-col-12 tablet:grid-col-4 tablet:padding-x-2 site-c-article">
-    <img class="display-block width-100 margin-bottom-2" src="{{ site.baseurl }}/images/projects/{{ project.img_url }}" alt="{{ project.img_description }}" />
-    <p><strong>{{ project.name }}</strong></p>
-    <p>{{ project.title }}</p>
-    <p>{{ project.summary }}
-  </li>
+    {% unless project.hide %}
+      <div class="tablet:grid-col-6 desktop:grid-col-4 padding-x-2 margin-bottom-4">
+        <div class="site-c-card">
+          <img class="site-c-card__image" src="{{ site.baseurl }}/images/projects/{{ project.img_url }}" alt="{{ project.img_description }}" />
+          <div class="site-c-card__body">
+            <span class="site-c-flag">{{ project.name }}</span>
+            <span class="site-c-card__title">{{ project.title }}</span>
+            <div class="usa-prose margin-top-2">
+              <p>{{ project.summary }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    {% endunless %}
   {% endfor %}
-</ul>
+</div>
