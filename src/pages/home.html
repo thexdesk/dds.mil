@@ -7,8 +7,8 @@ title: Home
 {% assign content = site.data.home %}
 
 <div class="site-c-page-banner site-c-page-banner--min-height">
-  <img src="{{ site.baseurl }}/assets/img/hero-placeholder.jpg" srcset="{{ site.baseurl }}/assets/img/hero-placeholder.jpg 640w,
-        {{ site.baseurl }}/assets/img/hero-placeholder.jpg" alt="">
+  <img src="{{ site.baseurl }}/images/index-hero.jpg" srcset="{{ site.baseurl }}/assets/img/index-hero.jpg 640w,
+        {{ site.baseurl }}/images/index-hero.jpg" alt="">
   <div class="site-c-page-banner__text">
     <div class="grid-container">
       <h1 class="site-c-page-banner__header">{{ content.hero.heading_title }}</h1>
@@ -24,8 +24,16 @@ title: Home
       <h2>Our work</h2>
       <p>The Department of Defense defends and protects our nation's military and civilians across the globe. However, complex systems and outdated tools can hinder this mission. We use design and technology to improve government services, strengthen national defense, and care for military members and their families.</p>
       <p>The Defense Digital Service is a SWAT team of nerds working to improve technology across the Department of Defense. We hire world-class designers, engineers, product managers, and bureaucracy hackers from diverse backgrounds to work on high-impact projects at the Pentagon and across the globe. Team members develop code, manage technical projects or product releases, and rewire outdated IT approaches.</p>
-
+    </div>
+  </div>
+  <div class="grid-row">
+    <div class="grid-col-12">
+      <h2>Projects</h2>
       {% include projects-grid.html %}
+    </div>
+  </div>
+  <div class="grid-row">
+    <div class="grid-col-12 tablet:grid-col-7 desktop:grid-col-8 site-c-section-heading site-c-section-heading--keep-column tablet:padding-right-3">
 
       <h2>Our partners</h2>
       <p>We work alongside service members and civil servants across the Defense Department. DOD civilians and military members with technical expertise can apply to work with DDS on short-term details.</p>

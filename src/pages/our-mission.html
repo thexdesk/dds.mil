@@ -7,27 +7,24 @@ permalink: /our-mission
 {% assign content = site.data.our_mission %}
 
 {% include _page-heading.html %}
-<div class="grid-container margin-y-5">
-  <div class="grid-row">
-    <div class="grid-col-12 tablet:grid-col-7 desktop:grid-col-8 site-c-section-heading site-c-section-heading--keep-column tablet:padding-right-3">
-      <h1>{{ content.page_title.heading_title }}</h1>
-      <h2>{{ content.page_title.heading_text }}</h2>
 
-      <h2><p>{{ content.our_work.title }}</p></h2>
-      <p>{{ content.our_work.section_1_text }}</p>
-      <p>{{ content.our_work.section_2_text }}</p>
-      <p>{{ content.our_work.section_3_text }}</p>
+<div class="grid-row">
+  <div class="grid-col-12 tablet:grid-col-7 desktop:grid-col-8 site-c-section-heading site-c-section-heading--keep-column tablet:padding-right-3">
 
-      <h2><p>{{ content.what_we_do.title }}</p></h2>
-      <p>{{ content.what_we_do.section_1_text }}</p>
+    <h2><p>{{ content.our_work.title }}</p></h2>
+    <p>{{ content.our_work.section_1_text }}</p>
+    <p>{{ content.our_work.section_2_text }}</p>
+    <p>{{ content.our_work.section_3_text }}</p>
 
-      <h2><p>{{ content.objectives.title }}</p></h2>
-      <ul>
-        {% for objective in content.objectives.items %}
-          <li>{{ objective.item }}</li>
-        {% endfor %}
-      </ul>
+    <h2><p>{{ content.what_we_do.title }}</p></h2>
+    <p>{{ content.what_we_do.section_1_text }}</p>
 
-    </div>
+    <h2><p>{{ content.objectives.title }}</p></h2>
+    <ul>
+      {% for objective in content.objectives.items %}
+        <li>{{ objective.item }}</li>
+      {% endfor %}
+    </ul>
+
   </div>
 </div>
