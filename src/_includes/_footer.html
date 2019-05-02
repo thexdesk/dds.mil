@@ -1,7 +1,15 @@
 
 {% unless page.simple_footer %}
 <div>
-<ul id="instagram-feed" class="site-c-instagallery"></ul>
+
+{% assign content = site.data.footer_images %}
+<ul id="instagram-feed" class="site-c-instagallery">
+  {% for image in site.data.footer_images %}
+    <li class="site-c-instagallery__item">
+      <img src="{{ site.baseurl }}/images/{{ image.url }}" class="site-c-instagallery__image" alt="{{ image.alt }}">
+    </li>
+  {% endfor %}
+</ul>
 </div>
 
 <section class="site-c-billboard">
