@@ -12,35 +12,58 @@ title: Home
   <div class="site-c-page-banner__text">
     <div class="grid-container">
       <h1 class="site-c-page-banner__header">{{ content.hero.heading_title }}</h1>
+      <a class="usa-button usa-button--outline usa-button--inverse usa-button--big" href="{{ site.baseurl }}{% link pages/our-mission.html %}">{{ content.hero.heading_button_text }}</a>
     </div>
   </div>
 </div>
+
 <div class="grid-container margin-y-5">
-  <div class="grid-row">
-    <div class="grid-col-12 tablet:grid-col-7 desktop:grid-col-8 site-c-section-heading site-c-section-heading--keep-column tablet:padding-right-3">
-      <h2>Solving big problems, supporting critical missions.</h2>
-      <p>The Defense Digital Service (DDS) is an agency team of the <a href="https://www.usds.gov">U.S. Digital Service</a>. We hire top technologists on term-limited "tours of duty" to help build better services and solutions. Our mission is to drive a giant leap forward in the way the Department builds, buys and deploys technology and digital services.</p>
 
-      <h2>Our work</h2>
-      <p>The Department of Defense defends and protects our nation's military and civilians across the globe. However, complex systems and outdated tools can hinder this mission. We use design and technology to improve government services, strengthen national defense, and care for military members and their families.</p>
-      <p>The Defense Digital Service is a SWAT team of nerds working to improve technology across the Department of Defense. We hire world-class designers, engineers, product managers, and bureaucracy hackers from diverse backgrounds to work on high-impact projects at the Pentagon and across the globe. Team members develop code, manage technical projects or product releases, and rewire outdated IT approaches.</p>
+  <section class="site-c-section">
+    <div class="grid-row">
+      <div class="grid-col-12 tablet:grid-col-7 desktop:grid-col-8 site-c-section-heading site-c-section-heading--keep-column tablet:padding-right-3">
+        <h2 class="site-c-section-heading__heading">Solving big problems, supporting critical missions.</h2>
+        <p>The Defense Digital Service (DDS) is an agency team of the <a href="https://www.usds.gov">U.S. Digital Service</a>. We hire top technologists on term-limited "tours of duty" to help build better services and solutions. Our mission is to drive a giant leap forward in the way the Department builds, buys and deploys technology and digital services.</p>
+      </div>
     </div>
-  </div>
-  <div class="grid-row">
-    <div class="grid-col-12">
-      <h2>Projects</h2>
-      {% include projects-carousel.html %}
-    </div>
-  </div>
-  <div class="grid-row">
-    <div class="grid-col-12 tablet:grid-col-7 desktop:grid-col-8 site-c-section-heading site-c-section-heading--keep-column tablet:padding-right-3">
+  </section>
 
-      <h2>Our partners</h2>
-      <p>We work alongside service members and civil servants across the Defense Department. DOD civilians and military members with technical expertise can apply to work with DDS on short-term details.</p>
-      <a class="join-button" href="https://hire.withgoogle.com/public/jobs/ddsmil/view/P_AAAAAAEAAF3KkxWUnRXoHq">TDY to DDS</a>
-    </div>
+  <hr />
 
-  </div>
+  <section class="site-c-section">
+    <div class="grid-row">
+      <div class="grid-col-12">
+        <section class="site-c-section">
+          <div class="site-c-section-heading">
+            <h2 class="site-c-section-heading__heading">Projects</h2>
+            <div class="site-c-section-heading__text usa-prose">
+              {{ content.work.heading_text | replace: 'site.baseurl', site.baseurl | markdownify}}
+            </div>
+            <div class="site-c-section-heading__links">
+              <a class="usa-button usa-button--outline" href="{{ site.baseurl }}{% link pages/projects.html %}">{{ content.work.heading_button_text }}</a>
+            </div>
+          </div>
+          <div class="site-c-section__body">
+            {% include projects-carousel.html %}
+          </div>
+        </section>
+      </div>
+    </div>
+  </section>
+
+  <hr />
+
+  <section class="site-c-section">
+    <div class="grid-row">
+      <div class="grid-col-12 tablet:grid-col-7 desktop:grid-col-8 site-c-section-heading site-c-section-heading--keep-column tablet:padding-right-3">
+        <h2>Our partners</h2>
+        <p>We work alongside service members and civil servants across the Defense Department. DOD civilians and military members with technical expertise can apply to work with DDS on short-term details.</p>
+        <a class="join-button" href="https://hire.withgoogle.com/public/jobs/ddsmil/view/P_AAAAAAEAAF3KkxWUnRXoHq">TDY to DDS</a>
+      </div>
+    </div>
+  </section>
+
+  <hr />
 
   <section class="site-c-section">
     <div class="site-c-section-heading">
