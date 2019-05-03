@@ -31,23 +31,17 @@ title: Home
   <hr />
 
   <section class="site-c-section">
-    <div class="grid-row">
-      <div class="grid-col-12">
-        <section class="site-c-section">
-          <div class="site-c-section-heading">
-            <h2 class="site-c-section-heading__heading">Projects</h2>
-            <div class="site-c-section-heading__text usa-prose">
-              {{ content.work.heading_text | replace: 'site.baseurl', site.baseurl | markdownify}}
-            </div>
-            <div class="site-c-section-heading__links">
-              <a class="usa-button usa-button--outline" href="{{ site.baseurl }}{% link pages/projects.html %}">{{ content.work.heading_button_text }}</a>
-            </div>
-          </div>
-          <div class="site-c-section__body">
-            {% include projects-carousel.html %}
-          </div>
-        </section>
+    <div class="site-c-section-heading">
+      <h2 class="site-c-section-heading__heading">Projects</h2>
+      <div class="site-c-section-heading__text usa-prose">
+        {{ content.work.heading_text | replace: 'site.baseurl', site.baseurl | markdownify}}
       </div>
+      <div class="site-c-section-heading__links">
+        <a class="usa-button usa-button--outline" href="{{ site.baseurl }}{% link pages/projects.html %}">{{ content.work.heading_button_text }}</a>
+      </div>
+    </div>
+    <div class="site-c-section__body">
+      {% include projects-carousel.html %}
     </div>
   </section>
 
@@ -56,7 +50,7 @@ title: Home
   <section class="site-c-section">
     <div class="grid-row">
       <div class="grid-col-12 tablet:grid-col-7 desktop:grid-col-8 site-c-section-heading site-c-section-heading--keep-column tablet:padding-right-3">
-        <h2>Our partners</h2>
+        <h2 class="site-c-section-heading__heading">Our partners</h2>
         <p>We work alongside service members and civil servants across the Defense Department. DOD civilians and military members with technical expertise can apply to work with DDS on short-term details.</p>
         <a class="join-button" href="https://hire.withgoogle.com/public/jobs/ddsmil/view/P_AAAAAAEAAF3KkxWUnRXoHq">TDY to DDS</a>
       </div>
