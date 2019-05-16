@@ -11,15 +11,15 @@ permalink: /our-mission
 <div class="grid-row">
   <div class="grid-col-12 tablet:grid-col-7 desktop:grid-col-8 site-c-section-heading site-c-section-heading--keep-column tablet:padding-right-3">
 
-    <h2><p>{{ content.our_work.title }}</p></h2>
+    <h2>{{ content.our_work.title }}</h2>
     <p>{{ content.our_work.section_1_text }}</p>
     <p>{{ content.our_work.section_2_text }}</p>
     <p>{{ content.our_work.section_3_text }}</p>
 
-    <h2><p>{{ content.what_we_do.title }}</p></h2>
+    <h2>{{ content.what_we_do.title }}</h2>
     <p>{{ content.what_we_do.section_1_text }}</p>
 
-    <h2><p>{{ content.objectives.title }}</p></h2>
+    <h2>{{ content.objectives.title }}</h2>
     <ul>
       {% for objective in content.objectives.items %}
         <li>{{ objective.item }}</li>
@@ -27,4 +27,12 @@ permalink: /our-mission
     </ul>
 
   </div>
+</div>
+
+<hr />
+
+<div class="grid-row grid-gap">
+
+  {% include apply.html %}
+
 </div>
