@@ -8,7 +8,7 @@ marketplace_page: true
 # Project detail page (Edit this)
 title: Saber
 agency: agency
-permalink: marketplace/saber
+permalink: marketplace/saber/
 project_url: https://www.foo.foo
 hide: false
 status: open

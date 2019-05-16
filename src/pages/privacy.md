@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Privacy
-permalink: /privacy
+permalink: /privacy/
 ---
 
 {% include _page-heading.html %}
