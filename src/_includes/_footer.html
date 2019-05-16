@@ -1,5 +1,3 @@
-
-{% unless page.simple_footer %}
 <div>
 
 {% assign content = site.data.footer_images %}
@@ -12,21 +10,22 @@
 </ul>
 </div>
 
-<section class="site-c-billboard">
-  <div class="grid-container">
-    <p class="margin-y-0">We need you.</p>
-    <p class="margin-y-0">Let’s help millions of people together.</p>
-    <p class="font-body-md margin-y-2">The Defense Digital Service is an agency team of the U.S. Digital Service.<br />Apply through USDS and note your interest in working for DDS.</p>
-    <p><a class="usa-button usa-button--outline usa-button--inverse" href="{{ site.usds_url }}/apply">Apply Now</a></p>
-  </div>
-</section>
+{% unless page.simple_footer %}
+  <section class="site-c-billboard">
+    <div class="grid-container">
+      <p class="margin-y-0">We need you.</p>
+      <p class="margin-y-0">Let’s help millions of people together.</p>
+      <p class="font-body-md margin-y-2">The Defense Digital Service is an agency team of the U.S. Digital Service.<br />Apply through USDS and note your interest in working for DDS.</p>
+      <p><a class="usa-button usa-button--outline usa-button--inverse" href="{{ site.usds_url }}/apply">Apply Now</a></p>
+    </div>
+  </section>
 {% endunless %}
 
 <footer class="site-c-footer">
   <div class="grid-container">
     <div class="grid-row flex-justify">
       <div class="grid-col-12 desktop:grid-col margin-bottom-7">
-        <img class="site-c-footer__logo" src="{{ site.baseurl }}/assets/img/usds-logo.svg" alt="USDS Logo">
+        <img class="site-c-footer__logo" src="{{ site.baseurl }}/assets/img/dds-logo-seal.png" alt="DDS Logo">
       </div>
       <div class="grid-col-12 tablet:grid-col-4 desktop:grid-col margin-bottom-7">
         <h2 class="site-c-footer__heading">Resources</h2>

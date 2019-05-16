@@ -8,7 +8,7 @@
             <span class="site-c-flag">{{ project.name }}</span>
             <span class="site-c-card__title">{{ project.title }}</span>
             <div class="usa-prose margin-top-2">
-              <p>{{ project.summary }}</p>
+              <p>{{ project.summary | truncatewords: 45, "" }}</p>
             </div>
           </div>
         </div>
