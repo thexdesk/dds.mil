@@ -1,8 +1,6 @@
 ---
 # Page template info (DO NOT EDIT)
 layout: default
-banner_file: banner--people-projects-lg.svg
-banner_file_mobile: banner--people-projects-sm.svg
 marketplace_page: true
 
 # Project detail page (Edit this)
