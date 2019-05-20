@@ -71,25 +71,13 @@ permalink: /privacy/
 </ul>
 <p><b>Image List</b>
   <ul>
-    {% assign items = site.data.layout %}
-    {% for item in items %}
-      <li><a href="{{item.img_url}}">{{item.img_description}}</a>: {{item.img_credit}}
-    {% endfor %}
     {% assign projects = site.data.projects %}
     {% for project in projects %}
-      <li><a href="{{project.img_url}}">{{project.img_description}}</a>: {{project.img_credit}}
-    {% endfor %}
-    {% assign subteams = site.data.subteams %}
-    {% for team in subteams %}
-      <li><a href="{{team.img_url}}">{{team.img_description}}</a>: {{team.img_credit}}
-    {% endfor %}
-    {% assign staff = site.data.staff %}
-    {% for person in staff %}
-      <li><a href="{{person.img_url}}">{{ person.name }}</a>: {{person.img_credit}}
+      <li><a href="{{ site.baseurl}}/images/projects/{{ project.img_url }}">{{project.img_description}}</a>: {{project.img_credit}}
     {% endfor %}
     {% assign gallery = site.data.gallery %}
     {% for image in gallery %}
-      <li><a href="{{image.full}}">{{image.description}}</a>: {{image.credit}}
+      <li><a href="{{ site.baseurl }}/images/gallery/{{ image.url }}">{{ image.description }}</a>: {{ image.credit }}
     {% endfor %}
   </ul>
 
