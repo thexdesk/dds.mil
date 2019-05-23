@@ -23,17 +23,13 @@ simple_footer: true
 
   <section class="site-c-section">
     <div class="grid-row">
-      <div class="grid-col-12 tablet:grid-col-7 desktop:grid-col-8 site-c-section-heading site-c-section-heading--keep-column tablet:padding-right-3">
+      <div class="grid-col-12 tablet:grid-col-7 desktop:grid-col-8 site-c-section-heading site-c-section-heading--keep-column tablet:padding-right-3 margin-bottom-2">
         <h2 class="site-c-section-heading__heading">Solving big problems, supporting critical missions.</h2>
         <p>The Defense Digital Service (DDS) is an agency team of the <a href="https://www.usds.gov">U.S. Digital Service</a>. We hire top technologists on term-limited "tours of duty" to help build better services and solutions. Our mission is to drive a giant leap forward in the way the Department builds, buys and deploys technology and digital services.</p>
         <a class="usa-button usa-button--outline" href="{{ site.baseurl }}/our-mission">Learn about our mission</a>
       </div>
     </div>
   </section>
-
-  <hr />
-
-  {% include apply.html %}
 
   <hr />
 
@@ -47,10 +43,14 @@ simple_footer: true
         <a class="usa-button usa-button--outline" href="{{ site.baseurl }}{% link pages/projects.html %}">{{ content.work.heading_button_text }}</a>
       </div>
     </div>
-    <div class="site-c-section__body">
-      {% include projects-carousel.html %}
-    </div>
+
+    {% include projects-carousel.html %}
+
   </section>
+
+  <hr />
+
+  {% include apply.html %}
 
   <hr />
 
