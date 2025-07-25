@@ -5,7 +5,7 @@ source 'https://rubygems.org'
 gem 'jekyll', '~> 3.8'
 
 group :jekyll_plugins do
-  gem 'bourbon', '~> 5.1'
+  gem 'bourbon', '~> 7.0', '>= 7.0.0'
   gem 'jekyll-sitemap', '~> 1.3'
   gem 'neat', '~> 3.0'
   gem 'uswds-jekyll', '4.1'
